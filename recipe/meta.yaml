@@ -1,0 +1,23 @@
+package:
+    name: gorgon-hello
+    version: 0.1
+
+build:
+    number: 1
+  
+source:
+    git_url: https://github.com/GorgonCryoEM/gorgon-hello.git
+    git_tag: master
+
+requirements:
+    build:
+        - cmake >=3.4
+        - python
+        - boost
+        - setuptools
+    run:
+        - python
+        - boost
+
+about:
+  summary: Gorgon 'Hello World!'
