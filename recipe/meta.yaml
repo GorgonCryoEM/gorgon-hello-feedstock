@@ -19,5 +19,13 @@ requirements:
         - python
         - boost
 
+test:
+    requires:
+        - python {{ environ['PY_VER'] + '*' }}  # [win]
+        - cmake
+        - nose
+    commands:
+        - nosetests --with-doctest --doctest-tests -vv
+ 
 about:
   summary: Gorgon 'Hello World!'
