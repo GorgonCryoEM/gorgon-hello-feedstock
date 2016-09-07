@@ -1,5 +1,5 @@
 # This file was generated automatically from conda-smithy. To update this configuration,
-# update the conda-forge.yaml and/or the recipe/meta.yaml.
+# update the conda-forge.yml and/or the recipe/meta.yaml.
 
 language: generic
 
@@ -9,6 +9,11 @@ env:
   matrix:
     
     - CONDA_PY=27
+    - CONDA_PY=34
+    - CONDA_PY=35
+  global:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    - secure: "ePXo0z8S3NPREBEbwdOPLAcwD3GAtJp1xwbJkzFRbnO/nCQPUC9/9VdBCaWtiaD5wlMSbXiwaEZdM65l4vExUlPxcaR7hVQEfX2i9skNCxQkT2GfYNbUqUVO5CspWU3gYDyAQqvapNPot40ta0b2eoH3tmraXIJ1g0SjODM74Kpv/iP7ynr0SJqZwCnVs6d7yfhiAC14NQdLv6BfJlFjOqMDTqf3T9irCT9TCZG1bq+9ZJ83jZVe1PVS8s9oCJXzhVCqeNLv3yEDymwfQRUQvh24cRgmbn4x7G7zIFEqHBaTP8Bn9/CcLnfXcuTtPupfZjxMuHz6+hdpa8JZDsUh1dTK2bFCOnVXHAo2KW9rboEEplL2yLyyCoUai2yXbS32EXXt1C2L2EYN9xzCMf41IPwBEXPjIGTIk2BSWSb8JklqFEg4lRfQQSRBis7OmG0naZn6PpDoVtF9kdgnTVi2IE20xq+aVZWiFY+523l1mZR5QSThJicHOp9rKyKmGSLJoj5DFjE+WNcll81QTDutw+8zek2pBFnlHv+uTCxSvZVQ9NlWaFHKro8Tqkvr2ZCvPvLNXWpt2BaimD40qBcXzAvsT4nY5T/jkAiorw17gIaCzEXpeq5sUNs8+sYWkzrB4QZM2ek2QHPfTh+LqnnX/F08onLDX+fxqXGeefPEGl8="
 
 
 before_install:
@@ -33,4 +38,4 @@ install:
 script:
   - conda build ./recipe
 
-  - ./ci_support/upload_or_check_non_existence.py ./recipe conda-forge --channel=main
+  - ./ci_support/upload_or_check_non_existence.py ./recipe gorgoncryoem --channel=main
