@@ -26,18 +26,11 @@ Once the conda-forge channel has been enabled, gorgon-hello can be installed wit
 conda install gorgon-hello
 ```
 
-Or gorgon-hello can be installed with a single command:
-
-```
-conda install gorgon-hello -c conda-forge
-```
-
 It is possible to list all of the versions of gorgon-hello available on your platform with:
 
 ```
 conda search gorgon-hello --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -58,8 +51,8 @@ packages to the [conda-forge](https://anaconda.org/conda-forge)
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](http://github.com/conda-forge/conda-smithy) has been developed.
-Using the ``conda-forge.yml`` within this repository, it is possible to regenerate all of
-this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy regenerate``.
+Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
+this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
 
 Terminology
@@ -77,9 +70,9 @@ Terminology
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gorgon-hello-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gorgon-hello-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gorgon-hello-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gorgon-hello-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gorgon-hello-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gorgon-hello-feedstock/branch/master)
+Linux: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/gorgoncryoem/gorgon-hello-feedstock?svg=True)](https://ci.appveyor.com/project/gorgoncryoem/gorgon-hello-feedstock/branch/master)
 
 Current release info
 ====================
