@@ -54,9 +54,6 @@ install:
     - cmd: conda config --add channels conda-forge
     - cmd: conda install -n root --quiet --yes conda-forge-build-setup
     - cmd: run_conda_forge_build_setup
-    
-    - appveyor DownloadFile "https://raw.githubusercontent.com/shadowwalkersb/conda-smithy/appveyor/appveyor/setup_x64.bat"
-    - cmd: call setup_x64.bat
 
 # Skip .NET project specific build phase.
 build: off
