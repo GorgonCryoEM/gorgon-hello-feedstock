@@ -11,36 +11,6 @@ Summary: Gorgon 'Hello World!'
 
 
 
-Installing gorgon-hello
-=======================
-
-Installing gorgon-hello from the gorgoncryoem channel can be achieved by adding gorgoncryoem to your channels with:
-
-```
-conda config --add channels gorgoncryoem
-```
-
-Once the gorgoncryoem channel has been enabled, gorgon-hello can be installed with:
-
-```
-conda install gorgon-hello
-```
-
-Or gorgon-hello can be installed with a single command:
-
-```
-conda install gorgon-hello -c gorgoncryoem
-```
-
-It is possible to list all of the versions of gorgon-hello available on your platform with:
-
-```
-conda search gorgon-hello --channel gorgoncryoem
-```
-
-
-
-
 Current build status
 ====================
 
@@ -52,6 +22,29 @@ Current release info
 ====================
 Version: [![Anaconda-Server Badge](https://anaconda.org/gorgoncryoem/gorgon-hello/badges/version.svg)](https://anaconda.org/gorgoncryoem/gorgon-hello)
 Downloads: [![Anaconda-Server Badge](https://anaconda.org/gorgoncryoem/gorgon-hello/badges/downloads.svg)](https://anaconda.org/gorgoncryoem/gorgon-hello)
+
+Installing gorgon-hello
+=======================
+
+Installing `gorgon-hello` from the `gorgoncryoem` channel can be achieved by adding `gorgoncryoem` to your channels with:
+
+```
+conda config --add channels gorgoncryoem
+```
+
+Once the `gorgoncryoem` channel has been enabled, `gorgon-hello` can be installed with:
+
+```
+conda install gorgon-hello
+```
+
+It is possible to list all of the versions of `gorgon-hello` available on your platform with:
+
+```
+conda search gorgon-hello --channel gorgoncryoem
+```
+
+
 
 
 Updating gorgon-hello-feedstock
