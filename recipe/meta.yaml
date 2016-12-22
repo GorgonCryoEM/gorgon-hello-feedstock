@@ -17,11 +17,11 @@ requirements:
     build:
         - cmake >=3.4
         - python
-        - boost
+        - boost 1.62.*
         - setuptools
     run:
         - python
-        - boost
+        - boost 1.62.*
 
 test:
     requires:
